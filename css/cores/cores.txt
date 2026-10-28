@@ -1,0 +1,37 @@
+/* ===== Paleta de cores ===== */
+
+/* Azul-marinho escuro — Cabeçalho */
+#111827
+
+/* Azul quase preto — Rodapé */
+#0B1120
+
+/* Cinza muito claro — Fundo principal */
+#F1F5F9
+
+/* Branco — Fundo dos cards e títulos no fundo escuro */
+#FFFFFF
+
+/* Roxo — Destaques, ícones e botões */
+#8B5CF6
+
+/* Roxo escuro — Links e textos de destaque */
+#7C3AED
+
+/* Ciano — Ícones e detalhes secundários */
+#22D3EE
+
+/* Azul-marinho — Títulos no fundo claro */
+#0F172A
+
+/* Cinza azulado — Textos secundários */
+#64748B
+
+/* Cinza claro — Textos secundários no fundo escuro */
+#CBD5E1
+
+/* Cinza suave — Bordas dos cards */
+#E2E8F0
+
+/* Lilás claro — Fundo dos ícones roxos */
+#EDE9FE
