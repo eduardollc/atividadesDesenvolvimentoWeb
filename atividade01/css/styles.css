@@ -9,28 +9,30 @@
 
 body {
     min-height: 100vh;
-    display: grid;
+    display: flex;
 
     grid-template-columns: 1fr;
     grid-template-rows: 100px auto;
 }
 
-.titulo-principal{
+.lado-esquerdo{
     font-family: monospace;
-    background-color: #F1F5F9;
+    flex: 0 0 200px;
+    padding: 25px;
+    background-color: #111827;
 
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    text-align: left;
+}
 
-    padding: 10px;
+.lado-esquerdo h1{
+    color: #F1F5F9;
 }
 
 .centro{
+
+    flex: 2;
     font-family: "Poppins";
     background-color: #F1F5F9;
-
+   
     padding: 20px;
 }
 
