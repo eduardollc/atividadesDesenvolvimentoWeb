@@ -16,6 +16,7 @@ body {
     grid-template-rows: 100px auto;
 }
 
+
 .lado-esquerdo{
     font-family: monospace;
     flex: 0 0 200px;
@@ -26,6 +27,7 @@ body {
 
 .lado-esquerdo h1{
     color: #F1F5F9;
+    
 }
 
 .centro {
