@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Atividade 01</title>
 </head>
 <body>
 
-    <header></header>
-    <main></main>
+    <header class="titulo-principal"> <h1>.01</h1></header>
+
+    <main class="centro">
+
+        <h2>Imagens</h2>
+        <p>A tag HTML <code>&lt;img&gt;</code> é utilizada para inserir imagens em uma página web. 
+            Ela utiliza o atributo <code>src</code> para indicar o caminho da imagem e o 
+            atributo <code>alt</code> para fornecer uma descrição alternativa, exibida caso 
+            a imagem não possa ser carregada e utilizada por leitores de tela. 
+            Você também pode definir a largura <code>width</code> e a altura <code>height</code> 
+            da imagem para controlar suas dimensões.</p>
+
+            <div class="codigo">
+                <h3>Exemplo de código</h3>
+                <code>&lt;img src="images/claudeComputer.png" alt="Claude" style="width: 120px; height: 100px;"&gt;</code>
+            </div>
+
+        <img src="images/claudeComputer.png" alt="claude" style="width: 120px; height: 100px;">
+
+        <h2>Classes e IDs</h2>
+
+        <p>
+            Em HTML, os atributos <code>class</code> e <code>id</code> são utilizados
+            para identificar elementos e aplicar estilos com CSS. O atributo
+            <code>class</code> pode ser utilizado em vários elementos, enquanto o
+            atributo <code>id</code> deve identificar um único elemento na página.
+        </p>
+        
+        <div class="codigo">
+            <h3>Exemplo de classe</h3>
+            <code>&lt;p class="destaque"&gt;Este parágrafo utiliza a classe destaque.&lt;/p&gt;</code>
+        </div>
+        
+        <div class="codigo">
+            <h3>Exemplo de ID</h3>
+            <code>&lt;h2 id=""&gt;Este parágrafo utiliza o id paragrafo.&lt;/h2&gt;</code>
+        </div>
+        
+        <div class="codigo">
+            <h3>Estilização com CSS</h3>
+            <code>.destaque { color: purple; }</code>
+            <code>#paragrafo { color: blue; }</code>
+        </div>
+        
+        <p class="destaque">Este parágrafo utiliza a classe destaque.</p>
+        
+        <p id="paragrafo">Este paragráfo utiliza um ID.</p>
+
+    </main>
     
 </body>
 </html>

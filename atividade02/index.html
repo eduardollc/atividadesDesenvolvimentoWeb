@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Atividade 02</title>
+</head>
+<body>
+
+    <header class="titulo-principal">
+        <h1>.02</h1>
+    </header>
+
+    <main class="centro">
+
+        <h2>Tabelas</h2>
+
+        <p>
+            A tag HTML <code>&lt;table&gt;</code> é utilizada para criar tabelas.
+            A tag <code>&lt;tr&gt;</code> representa uma linha, a tag
+            <code>&lt;th&gt;</code> representa um cabeçalho e a tag
+            <code>&lt;td&gt;</code> representa uma célula com informações.
+        </p>
+
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <code>&lt;table&gt;</code>
+            <code>&lt;tr&gt;&lt;th&gt;Nome&lt;/th&gt;&lt;th&gt;Curso&lt;/th&gt;&lt;/tr&gt;</code>
+            <code>&lt;tr&gt;&lt;td&gt;Ana&lt;/td&gt;&lt;td&gt;Sistemas&lt;/td&gt;&lt;/tr&gt;</code>
+            <code>&lt;/table&gt;</code>
+        </div>
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Curso</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Sistemas de Informação</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Ciência da Computação</td>
+            </tr>
+        </table>
+
+        
+        <h2>Layout HTML</h2>
+        
+        <p>
+            O layout HTML define a organização das diferentes partes de uma página.
+            Para isso, podemos utilizar elementos semânticos que representam o
+            cabeçalho, a navegação, o conteúdo principal, as seções e o rodapé.
+            Entre esses elementos estão as tags
+            <code>&lt;header&gt;</code>,
+            <code>&lt;nav&gt;</code>,
+            <code>&lt;section&gt;</code>,
+            <code>&lt;article&gt;</code>,
+            <code>&lt;aside&gt;</code> e
+            <code>&lt;footer&gt;</code>.
+        </p>
+        
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <code>&lt;header&gt;Cabeçalho&lt;/header&gt;</code>
+            <code>&lt;nav&gt;Navegação&lt;/nav&gt;</code>
+            <code>&lt;main&gt;</code>
+            <code>    &lt;section&gt;Conteúdo principal&lt;/section&gt;</code>
+            <code>    &lt;aside&gt;Conteúdo complementar&lt;/aside&gt;</code>
+            <code>&lt;/main&gt;</code>
+            <code>&lt;footer&gt;Rodapé&lt;/footer&gt;</code>
+        </div>
+        
+        <h3>Exemplo visual de layout</h3>
+        
+        <div class="exemplo-layout">
+        
+            <header class="layout-header">
+                HEADER — Cabeçalho
+            </header>
+        
+            <nav class="layout-nav">
+                NAV — Navegação
+            </nav>
+        
+            <div class="layout-conteudo">
+        
+                <section class="layout-section">
+                    <h3>SECTION</h3>
+                    <p>Representa uma seção do conteúdo.</p>
+        
+                    <article class="layout-article">
+                        <h3>ARTICLE</h3>
+                        <p>Representa um conteúdo independente, como um artigo.</p>
+                    </article>
+                </section>
+        
+                <aside class="layout-aside">
+                    <h3>ASIDE</h3>
+                    <p>Apresenta conteúdo complementar.</p>
+                </aside>
+        
+            </div>
+        
+            <footer class="layout-footer">
+                FOOTER — Rodapé
+            </footer>
+        
+        </div>
+
+        <h2>Listas</h2>
+
+        <p>
+            As listas são utilizadas para organizar informações.
+            A tag <code>&lt;ul&gt;</code> cria uma lista não ordenada,
+            enquanto a tag <code>&lt;ol&gt;</code> cria uma lista ordenada.
+            Cada item da lista é representado pela tag <code>&lt;li&gt;</code>.
+        </p>
+
+        <div class="codigo">
+            <h3>Exemplo de lista não ordenada</h3>
+            <code>&lt;ul&gt;</code>
+            <code>    &lt;li&gt;HTML&lt;/li&gt;</code>
+            <code>    &lt;li&gt;CSS&lt;/li&gt;</code>
+            <code>&lt;/ul&gt;</code>
+        </div>
+
+        <h3>Materiais para estudar</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <div class="codigo">
+            <h3>Exemplo de lista ordenada</h3>
+            <code>&lt;ol&gt;</code>
+            <code>    &lt;li&gt;Planejar&lt;/li&gt;</code>
+            <code>    &lt;li&gt;Desenvolver&lt;/li&gt;</code>
+            <code>&lt;/ol&gt;</code>
+        </div>
+
+        <h3>Etapas de um projeto</h3>
+        <ol>
+            <li>Planejar</li>
+            <li>Desenvolver</li>
+            <li>Testar</li>
+        </ol>
+
+        <h2>Block e Inline</h2>
+
+        <p>
+            Os elementos <code>block</code> normalmente ocupam toda a largura
+            disponível e começam em uma nova linha. Já os elementos
+            <code>inline</code> ocupam apenas o espaço necessário e permanecem
+            na mesma linha do texto.
+        </p>
+
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <code>&lt;div&gt;Elemento block&lt;/div&gt;</code>
+            <code>&lt;p&gt;Texto com &lt;span&gt;inline&lt;/span&gt;.&lt;/p&gt;</code>
+        </div>
+
+        <h3>Exemplo visual</h3>
+
+        <div class="bloco">
+            Este é um elemento block.
+        </div>
+
+        <p>
+            Este é um parágrafo com um elemento
+            <span class="destaque">inline</span>
+            dentro do texto.
+        </p>
+
+        <h2>Links</h2>
+
+        <p>
+            A tag HTML <code>&lt;a&gt;</code> é utilizada para criar links
+            que permitem navegar entre páginas ou acessar outros sites.
+            O atributo <code>href</code> define o endereço para o qual
+            o usuário será direcionado quando clicar no link.
+        </p>
+        
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <code>&lt;a href="https://www.google.com"&gt;Acessar Google&lt;/a&gt;</code>
+        </div>
+        
+        <p>
+            Exemplo de link:
+            <a href="https://www.google.com">Acessar Google</a>
+        </p>
+
+    </main>
+
+</body>
+</html>
