@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Atividade 03</title>
+</head>
+<body>
+
+    <aside class="lado-esquerdo">
+        <h1>.03</h1>
+    </aside>
+
+    <main class="centro">
+        <h2>Forms</h2>
+        <p>
+            Um formulário HTML é usado para coletar informações do usuário. 
+            A entrada do usuário é geralmente enviado a um servidor para 
+            processamento.
+        </p>
+
+        <h3>Elemento &lt;form&gt;</h3>
+        <p>
+            O elemento <code>&lt;form&gt;</code> é um contêiner para 
+            diferentes tipos de elementos de entrada, como: campos 
+            de texto, caixas de seleção, rádio botões, botões de envio,
+            etc.
+        </p>
+
+        <h3>Elemento &lt;imput&gt;</h3>
+        <p>
+            Um <code>&lt;imput&gt;</code> elemento pode ser exibido em 
+            de muitas maneiras, dependendo dotype atributo. Exemplos:
+        </p>
+
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>&lt;input type="text"&gt;</td>
+                <td>Exibe um campo de entrada de texto de linha única</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="radio"&gt;</td>
+                <td>Exibe um botão de opção (para selecionar uma das muitas opções)</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="checkbox"&gt;</td>
+                <td>Exibe uma caixa de seleção (para selecionar zero ou mais de muitas opções)</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="submit"&gt;</td>
+                <td>Exibe um botão de envio (para enviar o formulário)</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="button"&gt;</td>
+                <td>Exibe um botão clicável</td>
+            </tr>
+        </table>
+
+        <h3>Elemento &lt;label&gt;</h3>
+        <p>
+            O elemento <code>&lt;label&gt;</code> define um rótulo
+            para um campo do formulário. Ele ajuda o usuário a
+            identificar a finalidade de cada campo e melhora a
+            acessibilidade da página.
+        </p>
+
+        <p>
+            O atributo <code>for</code> do elemento
+            <code>&lt;label&gt;</code> deve ter o mesmo valor do
+            atributo <code>id</code> do campo ao qual está associado.
+        </p>
+
+        <h3>Campos de texto</h3>
+
+        <p>
+            O <code>&lt;input type="text"&gt;</code> define um campo
+            de entrada de texto de linha única, permitindo que o
+            usuário digite informações.
+        </p>
+
+        <div class="codigo">
+            <h3>Exemplo de codigo</h3>
+            <p><code>&lt;form&gt;</code></p>
+            <p><code>&lt;label for="pname"&gt;Primeiro nome:&lt;/label&gt;&lt;br&gt;</code></p>
+            <p><code>&lt;input type="text" id="pname" name="pname"&gt;&lt;br&gt;</code></p>
+            <p><code>&lt;label for="sname"&gt;Segundo nome:&lt;/label&gt;&lt;br&gt;</code></p>
+            <p><code>&lt;input type="text" id="sname" name="sname"&gt;</code></p>
+            <p><code>&lt;/form&gt;</code></p>
+        </div>
+
+        <form>
+            <label for="pname">Primeiro nome:</label><br>
+            <input type="text" id="pname" name="pname"><br>
+            <label for="sname">Segundo nome:</label><br>
+            <input type="text" id="snome" name="snome">
+        </form>
+
+        <h3>Botões de rádio</h3>
+        <p>
+            O <code>&lt;input type="radio"&gt;</code> define um botão
+            de opção. Ele permite que o usuário selecione apenas uma
+            opção de um grupo de alternativas.
+        </p>
+
+        <h3>Caixas de seleção</h3>
+        <p>
+            O <code>&lt;input type="checkbox"&gt;</code> define uma
+            caixa de seleção. Ela permite que o usuário selecione
+            nenhuma, uma ou várias opções de um grupo.
+        </p>
+
+        <h3>O botão Enviar</h3>
+        <p>
+            O <code>&lt;input type="submit"&gt;</code> define um botão
+            para enviar os dados preenchidos no formulário.
+            O atributo <code>action</code> do elemento
+            <code>&lt;form&gt;</code> especifica o destino para o qual
+            os dados serão enviados.
+        </p>
+
+    </main>
+    
+</body>
+</html>

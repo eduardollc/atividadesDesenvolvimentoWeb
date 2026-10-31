@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex: 2;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+}
+
+
+.lado-esquerdo{
+    font-family: monospace;
+    flex: 0 0 200px;
+    padding: 25px;
+    background-color: #111827;
+
+}
+
+.lado-esquerdo h1{
+    color: #F1F5F9;
+    
+}
+
+.centro {
+    font-family: "Poppins";
+    background-color: #F1F5F9;
+    flex: 1;
+    padding: 20px;
+}
+
+.centro p {
+    color: #7D7E7E;
+    max-width: 1200px;
+}
+
+.centro h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.centro h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.centro code {
+    font-size: 18px;
+    color: #411F7C;
+}
+
+.centro span {
+    color: #7C3AED;
+}
+
+
+/* BLOCOS DE CÓDIGO */
+
+.codigo {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    min-height: 120px;
+    padding: 15px 20px;
+    flex-direction: column;
+
+    border-radius: 20px;
+    background-color: #111827;
+    color: white;
+
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.codigo h3 {
+    color: #A78BFA;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.codigo code {
+    margin-top: 10px;
+    font-size: large;
+    color: #CBD5E1;
+}
+
+.centro table {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.centro th {
+    padding: 12px;
+    background-color: #EDE9FE;
+    color: #5B21B6;
+    text-align: left;
+}
+
+.centro td {
+    padding: 12px;
+    border: 1px solid #E2E8F0;
+    color: #7D7E7E;
+}
