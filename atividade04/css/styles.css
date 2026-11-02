@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LAYOUT PRINCIPAL */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background-color: #F1F5F9;
+}
+
+/* LADO ESQUERDO */
+
+.lado-esquerdo {
+    font-family: monospace;
+    flex: 0 0 200px;
+    padding: 25px;
+    background-color: #111827;
+}
+
+.lado-esquerdo h1 {
+    color: #F1F5F9;
+}
+
+/* CONTEÚDO CENTRAL */
+
+.centro {
+    font-family: "Poppins", sans-serif;
+    background-color: #F1F5F9;
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+}
+
+.centro h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #111827;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.centro h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #111827;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.centro p {
+    color: #7D7E7E;
+    max-width: 1000px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.centro code {
+    font-family: "Roboto", monospace;
+    font-size: 14px;
+    color: #7C3AED;
+}
+
+/* TABELA COMPARATIVA */
+
+.centro table {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+.centro th {
+    padding: 12px;
+    background-color: #EDE9FE;
+    color: #5B21B6;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #DDD6FE;
+}
+
+.centro td {
+    padding: 12px;
+    border: 1px solid #E2E8F0;
+    color: #475569;
+    font-size: 13px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.centro tr:nth-child(even) td {
+    background-color: #F8FAFC;
+}
+
+/* BLOCOS DE CÓDIGO E LINKS */
+
+.codigo {
+    width: 100%;
+    max-width: 750px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background-color: #111827;
+    color: #CBD5E1;
+}
+
+.codigo h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #A78BFA;
+    font-size: 16px;
+}
+
+.codigo p {
+    margin-bottom: 5px;
+    color: #CBD5E1;
+    overflow-wrap: anywhere;
+}
+
+.codigo code {
+    color: #CBD5E1;
+    font-size: 14px;
+}
+
+/* DESTAQUES ROXOS */
+
+.centro span {
+    color: #7C3AED;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .centro {
+        padding: 15px;
+    }
+
+    .centro table {
+        font-size: 12px;
+    }
+
+    .centro th,
+    .centro td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

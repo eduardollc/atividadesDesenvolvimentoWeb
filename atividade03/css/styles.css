@@ -10,96 +10,97 @@
 body {
     min-height: 100vh;
     display: flex;
-    flex: 2;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px auto;
+    background-color: #F1F5F9;
 }
 
+/* LADO ESQUERDO */
 
-.lado-esquerdo{
+.lado-esquerdo {
     font-family: monospace;
     flex: 0 0 200px;
     padding: 25px;
     background-color: #111827;
-
 }
 
-.lado-esquerdo h1{
+.lado-esquerdo h1 {
     color: #F1F5F9;
-    
 }
+
+/* CONTEÚDO CENTRAL */
 
 .centro {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     background-color: #F1F5F9;
     flex: 1;
+    min-width: 0;
     padding: 20px;
-}
-
-.centro p {
-    color: #7D7E7E;
-    max-width: 1200px;
 }
 
 .centro h2 {
     margin-top: 25px;
     margin-bottom: 15px;
+    color: #111827;
 }
 
 .centro h3 {
     margin-top: 25px;
     margin-bottom: 10px;
+    color: #111827;
+}
+
+.centro p {
+    color: #7D7E7E;
+    max-width: 1000px;
+    margin-bottom: 10px;
 }
 
 .centro code {
-    font-size: 18px;
-    color: #411F7C;
+    font-family: monospace;
+    font-size: 15px;
+    color: #7C3AED;
 }
 
 .centro span {
     color: #7C3AED;
 }
 
-
 /* BLOCOS DE CÓDIGO */
 
 .codigo {
-    display: flex;
     width: 100%;
-    max-width: 700px;
-    min-height: 120px;
+    max-width: 750px;
     padding: 15px 20px;
-    flex-direction: column;
-
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #111827;
-    color: white;
-
+    color: #CBD5E1;
     margin-top: 20px;
     margin-bottom: 25px;
 }
 
 .codigo h3 {
+    margin-top: 0;
     color: #A78BFA;
-    display: flex;
-    justify-content: start;
-    align-items: center;
 }
 
-.codigo code {
-    margin-top: 10px;
-    font-size: large;
+.codigo p {
+    margin-bottom: 5px;
     color: #CBD5E1;
 }
 
+.codigo code {
+    color: #CBD5E1;
+    font-size: 14px;
+}
+
+/* TABELAS */
+
 .centro table {
     width: 100%;
-    max-width: 700px;
-    margin-top: 25px;
+    max-width: 1000px;
+    margin-top: 20px;
     margin-bottom: 25px;
     border-collapse: collapse;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 .centro th {
@@ -112,5 +113,126 @@ body {
 .centro td {
     padding: 12px;
     border: 1px solid #E2E8F0;
-    color: #7D7E7E;
+    color: #475569;
+    text-align: left;
 }
+
+/* FORMULÁRIOS */
+
+.formulario {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.formulario input[type="text"] {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #111827;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.formulario input[type="text"]:focus {
+    outline: none;
+    border-color: #8B5CF6;
+}
+
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #7C3AED;
+    cursor: pointer;
+}
+
+.formulario label {
+    margin-right: 10px;
+    color: #374151;
+}
+
+.opcao {
+    margin-bottom: 10px;
+}
+
+.formulario input[type="submit"] {
+    background-color: #7C3AED;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #6D28D9;
+}
+
+/* EXEMPLOS DE GRID */
+
+.exemplo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.item-grid {
+    padding: 20px;
+    text-align: center;
+    background-color: #EDE9FE;
+    color: #5B21B6;
+    border-radius: 8px;
+}
+
+/* EXEMPLOS DE FLEXBOX */
+
+.exemplo-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 600px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #E2E8F0;
+    border-radius: 10px;
+}
+
+.item-flex {
+    padding: 20px;
+    background-color: #7C3AED;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+/* EXEMPLO DE CONTAINER */
+
+.container-exemplo {
+    max-width: 700px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+}
+
+.container-exemplo h4 {
+    margin-bottom: 10px;
+    color: #5B21B6;
+}
+
+.container-exemplo p {
+    margin-bottom: 0;
+}
+

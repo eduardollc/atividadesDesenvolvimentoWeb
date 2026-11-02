@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +14,29 @@
     </aside>
 
     <main class="centro">
+
         <h2>Forms</h2>
+
         <p>
-            Um formulário HTML é usado para coletar informações do usuário. 
-            A entrada do usuário é geralmente enviado a um servidor para 
-            processamento.
+            Um formulário HTML é utilizado para coletar informações
+            do usuário. Os dados podem ser enviados para um servidor
+            para processamento.
         </p>
 
         <h3>Elemento &lt;form&gt;</h3>
+
         <p>
-            O elemento <code>&lt;form&gt;</code> é um contêiner para 
-            diferentes tipos de elementos de entrada, como: campos 
-            de texto, caixas de seleção, rádio botões, botões de envio,
-            etc.
+            O elemento <code>&lt;form&gt;</code> é um contêiner para
+            campos de entrada, caixas de seleção, botões de rádio
+            e botões de envio.
         </p>
 
-        <h3>Elemento &lt;imput&gt;</h3>
+        <h3>Elemento &lt;input&gt;</h3>
+
         <p>
-            Um <code>&lt;imput&gt;</code> elemento pode ser exibido em 
-            de muitas maneiras, dependendo dotype atributo. Exemplos:
+            O elemento <code>&lt;input&gt;</code> permite diferentes
+            tipos de entrada, definidos pelo atributo
+            <code>type</code>.
         </p>
 
         <table>
@@ -40,90 +45,263 @@
                 <th>Descrição</th>
             </tr>
             <tr>
-                <td>&lt;input type="text"&gt;</td>
-                <td>Exibe um campo de entrada de texto de linha única</td>
+                <td>text</td>
+                <td>Campo para digitar texto em uma linha.</td>
             </tr>
             <tr>
-                <td>&lt;input type="radio"&gt;</td>
-                <td>Exibe um botão de opção (para selecionar uma das muitas opções)</td>
+                <td>radio</td>
+                <td>Permite selecionar uma opção de um grupo.</td>
             </tr>
             <tr>
-                <td>&lt;input type="checkbox"&gt;</td>
-                <td>Exibe uma caixa de seleção (para selecionar zero ou mais de muitas opções)</td>
+                <td>checkbox</td>
+                <td>Permite selecionar zero ou mais opções.</td>
             </tr>
             <tr>
-                <td>&lt;input type="submit"&gt;</td>
-                <td>Exibe um botão de envio (para enviar o formulário)</td>
+                <td>submit</td>
+                <td>Cria um botão para enviar o formulário.</td>
             </tr>
             <tr>
-                <td>&lt;input type="button"&gt;</td>
-                <td>Exibe um botão clicável</td>
+                <td>button</td>
+                <td>Cria um botão clicável.</td>
             </tr>
         </table>
 
         <h3>Elemento &lt;label&gt;</h3>
-        <p>
-            O elemento <code>&lt;label&gt;</code> define um rótulo
-            para um campo do formulário. Ele ajuda o usuário a
-            identificar a finalidade de cada campo e melhora a
-            acessibilidade da página.
-        </p>
 
         <p>
-            O atributo <code>for</code> do elemento
-            <code>&lt;label&gt;</code> deve ter o mesmo valor do
-            atributo <code>id</code> do campo ao qual está associado.
+            O elemento <code>&lt;label&gt;</code> define um rótulo
+            para identificar um campo. O atributo <code>for</code>
+            deve corresponder ao <code>id</code> do campo.
         </p>
 
         <h3>Campos de texto</h3>
 
         <p>
-            O <code>&lt;input type="text"&gt;</code> define um campo
-            de entrada de texto de linha única, permitindo que o
-            usuário digite informações.
+            O <code>&lt;input type="text"&gt;</code> permite que o
+            usuário digite informações em uma linha.
         </p>
 
         <div class="codigo">
-            <h3>Exemplo de codigo</h3>
+            <h3>Exemplo de código</h3>
             <p><code>&lt;form&gt;</code></p>
-            <p><code>&lt;label for="pname"&gt;Primeiro nome:&lt;/label&gt;&lt;br&gt;</code></p>
-            <p><code>&lt;input type="text" id="pname" name="pname"&gt;&lt;br&gt;</code></p>
-            <p><code>&lt;label for="sname"&gt;Segundo nome:&lt;/label&gt;&lt;br&gt;</code></p>
-            <p><code>&lt;input type="text" id="sname" name="sname"&gt;</code></p>
+            <p><code>&lt;label for="nome"&gt;Nome:&lt;/label&gt;</code></p>
+            <p><code>&lt;input type="text" id="nome" name="nome"&gt;</code></p>
             <p><code>&lt;/form&gt;</code></p>
         </div>
 
-        <form>
-            <label for="pname">Primeiro nome:</label><br>
-            <input type="text" id="pname" name="pname"><br>
-            <label for="sname">Segundo nome:</label><br>
-            <input type="text" id="snome" name="snome">
+        <form class="formulario">
+            <label for="nome">Primeiro nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="sobrenome">Segundo nome:</label><br>
+            <input type="text" id="sobrenome" name="sobrenome">
         </form>
 
         <h3>Botões de rádio</h3>
+
         <p>
-            O <code>&lt;input type="radio"&gt;</code> define um botão
-            de opção. Ele permite que o usuário selecione apenas uma
-            opção de um grupo de alternativas.
+            O <code>&lt;input type="radio"&gt;</code> permite selecionar
+            apenas uma opção dentro de um grupo que compartilha o mesmo
+            atributo <code>name</code>.
         </p>
+
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <p><code>&lt;input type="radio" name="numero" value="01"&gt;</code></p>
+            <p><code>&lt;label&gt;01&lt;/label&gt;</code></p>
+            <p><code>&lt;input type="radio" name="numero" value="02"&gt;</code></p>
+            <p><code>&lt;label&gt;02&lt;/label&gt;</code></p>
+        </div>
+
+        <form class="formulario">
+            <div class="opcao">
+                <input type="radio" id="numero01" name="numero" value="01">
+                <label for="numero01">01</label>
+            </div>
+
+            <div class="opcao">
+                <input type="radio" id="numero02" name="numero" value="02">
+                <label for="numero02">02</label>
+            </div>
+        </form>
 
         <h3>Caixas de seleção</h3>
+
         <p>
-            O <code>&lt;input type="checkbox"&gt;</code> define uma
-            caixa de seleção. Ela permite que o usuário selecione
-            nenhuma, uma ou várias opções de um grupo.
+            O <code>&lt;input type="checkbox"&gt;</code> permite
+            selecionar várias opções independentemente.
         </p>
+
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <p><code>&lt;input type="checkbox" id="html" name="html"&gt;</code></p>
+            <p><code>&lt;label for="html"&gt;HTML&lt;/label&gt;</code></p>
+            <p><code>&lt;input type="checkbox" id="css" name="css"&gt;</code></p>
+            <p><code>&lt;label for="css"&gt;CSS&lt;/label&gt;</code></p>
+        </div>
+
+        <form class="formulario">
+            <div class="opcao">
+                <input type="checkbox" id="html" name="html">
+                <label for="html">HTML</label>
+            </div>
+
+            <div class="opcao">
+                <input type="checkbox" id="css" name="css">
+                <label for="css">CSS</label>
+            </div>
+        </form>
 
         <h3>O botão Enviar</h3>
+
         <p>
-            O <code>&lt;input type="submit"&gt;</code> define um botão
-            para enviar os dados preenchidos no formulário.
-            O atributo <code>action</code> do elemento
-            <code>&lt;form&gt;</code> especifica o destino para o qual
-            os dados serão enviados.
+            O <code>&lt;input type="submit"&gt;</code> cria um botão
+            para enviar os dados do formulário. O atributo
+            <code>action</code> define o destino do envio.
         </p>
 
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <p><code>&lt;form action="/processar.php"&gt;</code></p>
+            <p><code>&lt;input type="submit" value="Enviar"&gt;</code></p>
+            <p><code>&lt;/form&gt;</code></p>
+        </div>
+
+        <form class="formulario" action="#" method="get">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>CSS Grid</h2>
+
+        <p>
+            O CSS Grid é um sistema de layout que organiza os elementos
+            em linhas e colunas. Ele facilita a criação de estruturas
+            com duas dimensões.
+        </p>
+
+        <h3>Propriedades principais</h3>
+
+        <table>
+            <tr>
+                <th>Propriedade</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>display: grid</td>
+                <td>Ativa o layout Grid.</td>
+            </tr>
+            <tr>
+                <td>grid-template-columns</td>
+                <td>Define as colunas do layout.</td>
+            </tr>
+            <tr>
+                <td>grid-template-rows</td>
+                <td>Define as linhas do layout.</td>
+            </tr>
+            <tr>
+                <td>gap</td>
+                <td>Define o espaço entre os elementos.</td>
+            </tr>
+        </table>
+
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <p><code>.grade {</code></p>
+            <p><code>&nbsp;&nbsp;display: grid;</code></p>
+            <p><code>&nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);</code></p>
+            <p><code>&nbsp;&nbsp;gap: 10px;</code></p>
+            <p><code>}</code></p>
+        </div>
+
+        <div class="exemplo-grid">
+            <div class="item-grid">Item 1</div>
+            <div class="item-grid">Item 2</div>
+            <div class="item-grid">Item 3</div>
+            <div class="item-grid">Item 4</div>
+            <div class="item-grid">Item 5</div>
+            <div class="item-grid">Item 6</div>
+        </div>
+
+        <h2>CSS Flexbox</h2>
+
+        <p>
+            O Flexbox é um sistema de layout que permite distribuir,
+            alinhar e organizar elementos em uma linha ou coluna.
+        </p>
+
+        <h3>Propriedades principais</h3>
+
+        <table>
+            <tr>
+                <th>Propriedade</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>display: flex</td>
+                <td>Ativa o Flexbox no contêiner.</td>
+            </tr>
+            <tr>
+                <td>justify-content</td>
+                <td>Alinha os elementos no eixo principal.</td>
+            </tr>
+            <tr>
+                <td>align-items</td>
+                <td>Alinha os elementos no eixo transversal.</td>
+            </tr>
+            <tr>
+                <td>flex-wrap</td>
+                <td>Permite que os elementos quebrem para outra linha.</td>
+            </tr>
+            <tr>
+                <td>gap</td>
+                <td>Define o espaço entre os elementos.</td>
+            </tr>
+        </table>
+
+        <div class="codigo">
+            <h3>Exemplo de código</h3>
+            <p><code>.flex {</code></p>
+            <p><code>&nbsp;&nbsp;display: flex;</code></p>
+            <p><code>&nbsp;&nbsp;justify-content: space-around;</code></p>
+            <p><code>&nbsp;&nbsp;align-items: center;</code></p>
+            <p><code>&nbsp;&nbsp;gap: 10px;</code></p>
+            <p><code>}</code></p>
+        </div>
+
+        <div class="exemplo-flex">
+            <div class="item-flex">Item 1</div>
+            <div class="item-flex">Item 2</div>
+            <div class="item-flex">Item 3</div>
+        </div>
+
+        <h2>Containers</h2>
+
+        <p>
+            Um container é um elemento que agrupa outros elementos
+            e ajuda a organizar o conteúdo da página. Em HTML, a tag
+            <code>&lt;div&gt;</code> é frequentemente usada para criar
+            contêineres genéricos.
+        </p>
+
+        <h3>Exemplo de código</h3>
+
+        <div class="codigo">
+            <p><code>&lt;div class="container"&gt;</code></p>
+            <p><code>&nbsp;&nbsp;&lt;h3&gt;Título&lt;/h3&gt;</code></p>
+            <p><code>&nbsp;&nbsp;&lt;p&gt;Conteúdo do container.&lt;/p&gt;</code></p>
+            <p><code>&lt;/div&gt;</code></p>
+        </div>
+
+        <div class="container-exemplo">
+            <h4>Meu container</h4>
+            <p>
+                Este conteúdo está agrupado dentro de uma div,
+                que pode receber estilos de largura, espaçamento,
+                borda e cor de fundo.
+            </p>
+        </div>
+
     </main>
-    
+
 </body>
 </html>
