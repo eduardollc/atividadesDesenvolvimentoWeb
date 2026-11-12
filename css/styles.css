@@ -12,16 +12,17 @@
 body{
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px 1fr 100px;
+    grid-template-columns:  220px 1fr;
+    grid-template-rows: 100px 1fr 100px;
 }
 
 .titulo-principal{
+    grid-column: 1 / 3;
     padding: 25px;
     background-color: #111827;
 }
 
-.titulo-principal h3{
+.titulo-principal h1{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -48,6 +49,18 @@ body{
     align-items: flex-start;
     justify-content: center;
     color: #CBD5E1
+}
+
+.lado-esquerdo{
+
+    padding: 25px;
+    display: grid;
+        background-color: #2e2e2e;
+
+}
+
+.disciplina{
+
 }
 
 .centro{
@@ -150,6 +163,7 @@ body{
 
 
 .rodape{
+    grid-column: 1/3;
     display: flex;
     justify-content: center;
     align-items: center;
