@@ -22,10 +22,24 @@ body {
     flex: 0 0 200px;
     padding: 25px;
     background-color: #111827;
+    display: flex;
+    flex-direction: column;
 }
 
 .lado-esquerdo h1 {
     color: #F1F5F9;
+}
+
+.botao-voltar {
+    text-decoration: none;
+    color: #CBD5E1;
+    background-color: #1F2937;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-top: 25px;
 }
 
 /* CONTEÚDO CENTRAL */
@@ -138,20 +152,3 @@ body {
     color: #7C3AED;
 }
 
-/* RESPONSIVIDADE */
-
-@media (max-width: 900px) {
-    .centro {
-        padding: 15px;
-    }
-
-    .centro table {
-        font-size: 12px;
-    }
-
-    .centro th,
-    .centro td {
-        padding: 8px;
-        font-size: 12px;
-    }
-}
